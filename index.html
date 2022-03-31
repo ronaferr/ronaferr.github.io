@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tryber</title>
-  </head>
-  <style>
-    h1 {font-family: monospace;}
-    #descrition {font-style: italic;
-    font-family: cursive;}
-    body {background-color:dodgerblue;}
-    .região {font-style: normal;
-    font-variant: small-caps;}
-    .type1 {font-size: 17px;}
-    li {font-family: monospace;}
 
-  </style>
-  <body>
-    <h1>Ronaldo Carlos Ferreira</h1>
-    <h3><a href="https://www.linkedin.com/in/ronaldo-carlos-ferreira-9a8b48219/" target="_blank">Rona</a></h3>
-    <img src="foto.jpg" width = " 200 px" alt="Foto do Ronaldo de calça jenas, camisa azul marinho e jaqueta marrom">
-    <p id="descrition">Estudante de Programação na <a href="https://www.betrybe.com/" target="_blank">Trybe</a>, amante da <a href="https://www.omelete.com.br/" target="_blank">Nerdice</a> e do <a href="https://www.vista-se.com.br/" target="_blank">Veganismo</a>, <a class="região">brasileiro</a>, atualmente mora em <a class="região">Campinas-SP</a> com sua <a href="#rayssa">noiva</a> e seus <a href="#pets">pets</a>.</p>
-    <p>Algumas de minhas habilidades são:</p>
-    <ul>
-        <li class="type1">Organização</li>
-        <li><strong>Comprometimento</strong></li>
-        <li class="type1">Analitico</li>
-    </ul>
-    <p>E algumas outras:</p>
-    <ul>
-        <li class="type1">Músico</li>
-        <li class="">Cozinheiro</li>
-        <li class="type1">Artesão</li>
-        <li class=""> Gestor</li>
-        
-          
-    </ul>
-    <h3>Rayssa (Noiva)</h3>
-    <img id = "rayssa" src= "foto2.jpg" width = "100 px" alt = "Foto Rayssa">
-    <h3>Pets</h3>
-    <em>(Thor e Alfred)</em>
-    <br>
-    <img id = "pets" src= "pets.jpg" width = "100 px" alt = "Foto Pets">
+<head>
+  <meta charset="UTF-8">
+  <title>Tryber</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <p>Atualmente está estudando na Trybe para se tornar um profissional <strong>Desenvolvedor Web</strong>, adquirindo novas competências, que até o momento são:</p>
-    <ul>
-        <li>Unix & Bash</li>
-        <li>Git & Git Hub</li>
-        <li>HTML</li>
+<body>
+  <header id="cabeçalho">
+    <div class="name">
+      <h1>Ronaldo Carlos Ferreira</h1>
+    </div>
+  </header>
+  <nav id="contanierNav">
+    <div class="image-contanier">
+      <img id="profile" src="media/20210714_150515.jpg" alt="Foto do Ronaldo busto">
+    </div>
+    <section id="informações">
+      <div id="apresentação">
+        <p id="descrition">Estudante de Desenvolvimento Web na <a href="https://www.betrybe.com/"
+            target="_blank">Trybe</a>, apaixonado por Tecnologia, Música, Nerdices e Veganismo.
+      </div>
+      <table id="tabela">
+        <tr>
+          <td>Cidade</td>
+          <td>Campinas</td>
+        </tr>
+        <tr>
+          <td>Estado</td>
+          <td>São Paulo</td>
+        </tr>
+        <tr>
+          <td>País</td>
+          <td>Brasil</td>
+        </tr>
+      </table>
+    </section>
+  </nav>
+<section id="listas">
+  <div id="lista1">
+  <h4>Minhas habilidades</h4>
+  <ul>
+    <li>Unix & Bash</li>
+    <li>Git & Git Hub</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Testes</li>
+  </ul>
+</div>
+<div id="lista2">
+  <h4>Alguns de meus Talentos</h4>
+  <ul>
+    <li>Organização</li>
+    <li>Aprender a Aprender</li>
+    <li>Contexto</li>
+    <li>Paciência</li>
+    <li>Competitividade</li>
+  </ul>
+</div>
+</section>
 
-    </ul>
-    <img src= "Batman_Batcomputer.jpg" width = "400 px" alt = "BatComputer">
-
-
-    
 
 
 
-  </body>
+</body>
+
 </html>
