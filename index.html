@@ -3,68 +3,139 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Tryber</title>
+  <title>Portfólio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Indie+Flower&family=Permanent+Marker&family=Potta+One&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header id="cabeçalho">
-    <div class="name">
-      <h1>Ronaldo Carlos Ferreira</h1>
-    </div>
-  </header>
-  <nav id="contanierNav">
-    <div class="image-contanier">
-      <img id="profile" src="media/20210714_150515.jpg" alt="Foto do Ronaldo busto">
-    </div>
-    <section id="informações">
-      <div id="apresentação">
-        <p id="descrition">Estudante de Desenvolvimento Web na <a href="https://www.betrybe.com/"
-            target="_blank">Trybe</a>, apaixonado por Tecnologia, Música, Nerdices e Veganismo.
+  <header id="header">
+    <nav class="name">
+      <h1>Olá !</h1>
+      <div id="linksHeader">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contatos</a>
       </div>
-      <table id="tabela">
-        <tr>
-          <td>Cidade</td>
-          <td>Campinas</td>
-        </tr>
-        <tr>
-          <td>Estado</td>
-          <td>São Paulo</td>
-        </tr>
-        <tr>
-          <td>País</td>
-          <td>Brasil</td>
-        </tr>
-      </table>
-    </section>
-  </nav>
-<section id="listas">
-  <div id="lista1">
-  <h4>Minhas habilidades</h4>
-  <ul>
-    <li>Unix & Bash</li>
-    <li>Git & Git Hub</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Testes</li>
-  </ul>
-</div>
-<div id="lista2">
-  <h4>Alguns de meus Talentos</h4>
-  <ul>
-    <li>Organização</li>
-    <li>Aprender a Aprender</li>
-    <li>Contexto</li>
-    <li>Paciência</li>
-    <li>Competitividade</li>
-  </ul>
-</div>
-</section>
+    </nav>
+  </header>
+  <section id="home">
+    <h2>Bem vindo(a)!!!</h2>
+    <div class="contanierHome">
+      <div class="contanierImage"><img src="media/baby-groot.png"/></div>
 
-
-
-
+      <div class="contanierTextHome">
+        <div>
+          <p>Aqui você podera encontrar informações minhas como: projetos, tecnologias, algumas coisas sobre mim e como
+            entrar em contato comigo, espero que goste.</p>
+          <p>Então, vamos?</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h2>It's me!!!</h2>
+    <div class="contanierAbout1">
+      <div class="image-contanier">
+        <img id="profile" src="media/20210714_150515.jpg" alt="Foto do Ronaldo busto">
+      </div>
+      <div id="apresentation">
+        <div>
+          <p class="descrition">Meu nome é Ronaldo, tenho 28, moro em Campinas/SP e sou Desenvolvedor Web FrontEnd, atualmente estou estudando na
+            Trybe para me tornar um Desenvolvedor Full Stack</p>
+          <p class="descrition">Já fiz cursos de Html, CSS e JavaScript e um curso da Google de JavaScript também.</p>
+        </div>
+      </div>
+    </div>
+    <div id="listHability">
+      <h4>Minhas habilidades</h4>
+      <div class="hability">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
+      </div>
+    </div>
+    <div id="contanierListTalent">
+      <h4>Alguns de meus Talentos</h4>
+      <div class="listOfTalent">
+        <ul>
+          <li>Organização</li>
+          <li>Aprender a Aprender</li>
+          <li>Contexto</li>
+          <li>Paciência</li>
+          <li>Competitividade</li>
+          <li>Comunicação</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>Projetos</h2>
+    <h3>Aqui tem alguns de meus projetos</h3>
+    <div class="contanierProjects">
+      <div class="project">
+        <h4>Star Wars Planets</h4>
+        <div class="imageProject"><img src="media/project-star-wars.png" alt="foto projeto star wars"></div>
+        <div>
+          <a href="https://project-star-wars-planets.vercel.app/" target="_blank">
+            <button type="button">acesse</button>
+          </a>
+          <a href="https://github.com/ronaferr/project-star-wars-planets" target="_blank">
+            <button type="button">repositório</button>
+          </a>
+        </div>
+      </div>
+      <div class="project">
+        <h4>Trivia</h4>
+        <div class="imageProject"><img src="media/project-trivia.png" alt="foto projeto trivia"></div>
+        <div>
+          <a href="https://project-trivia-6sk7qjdrj-ronaferr.vercel.app/" target="_blank">
+            <button type="button">acesse</button>
+          </a>
+          <a href="https://github.com/ronaferr/project-trivia" target="_blank">
+            <button type="button">repositório</button>
+          </a>
+        </div>
+      </div>
+      <div class="project">
+        <h4>Wallet</h4>
+        <div class="imageProject"><img src="media/project-wallet.png" alt="foto projeto wallet"></div>
+        <div>
+          <a href="https://project-trybe-wallet-snowy.vercel.app/" target="_blank">
+            <button type="button">acesse</button>
+          </a>
+          <a href="https://github.com/ronaferr/project-trybe-wallet" target="_blank">
+            <button type="button">repositório</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contatos</h2>
+    <h3>Quer entrar em contato? Você pode me encontar por aqui</h3>
+    <div class="contanierContacts">
+      <a href="https://github.com/ronaferr" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+      </a>
+      <a href="https://www.linkedin.com/in/ronaldo-carlos-ferreira-9a8b48219/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+      </a>
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+        <img src="https://raw.githubusercontent.com/GabrielCoruja/GabrielCoruja/master/images/gmail.png" />
+      </a>
+    </div>
+  </section>
+  <footer></footer>
 </body>
 
 </html>

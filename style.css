@@ -1,110 +1,335 @@
-    
-body { 
-    top: 0%;
-    background-color: #e2e2e2;
-}   
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }    
+
+/*   
 p {
     font-family: cursive;
 }
 
 h1, h3, h4 {
     font-family: monospace;
-}
+} */
 
+body { 
+    /* background-image: linear-gradient(to top, #F8F42A 0%, #F9DA15 100%); */
+    /* Created with https://www.css-gradient.com */
+    /* background: #EDEB4E;
+    background: -webkit-linear-gradient(top left, #EDEB4E, #F9F62C);
+    background: -moz-linear-gradient(top left, #EDEB4E, #F9F62C);
+    background: linear-gradient(to bottom right, #EDEB4E, #F9F62C); */
+    /* Created with https://www.css-gradient.com */
+background: rgba(252, 255, 191, 1.0);
+background: -webkit-linear-gradient(top left, rgba(252, 255, 191, 1.0), rgba(234, 224, 28, 1.0));
+background: -moz-linear-gradient(top left, rgba(252, 255, 191, 1.0), rgba(234, 224, 28, 1.0));
+background: linear-gradient(to bottom right, rgba(252, 255, 191, 1.0), rgba(234, 224, 28, 1.0));
 
-.image-contanier {
-    margin-top: 10px;
-    width: auto;
-}
+} 
 
-#profile {
-    border-radius: 100px;
-    margin: 0 auto;
-    display: flex;
-    height: 200px;
-    width: 150px;
-    padding: 2px;
-    background-color: #7d7576;
-}
-#informações {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-
-}
-#apresentação {
-display: inline-block;
-}
-
-#descrition {
-font-style: italic;
-font-family: cursive;
-}
-
-#tabela {
-    display: inline-block;
-    border: 1px solid black;
-    border-spacing: 0px;
-    margin-right: 10px;
-}
-
-#tabela td {
-    border: 1px dashed black;
-    padding: 5px;
-}
-
-#lista1 {
-    border-radius: 20px;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    border: 2px solid #717b77;
-    padding: 5px;
-    background-color: #868f82;
-}
-#lista1 h4 {
-    text-align: center;
-}
-
-#lista2 {
-    border-radius: 20px;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    border: 2px solid #717b77;
-    padding: 5px;
-    background-color: #868f82;
-}
-#lista2 h4 {
-    text-align: center;
-}
-
-#listas {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-li {
-font-family: monospace;
-}
 
 .name {
-    display: flex;
-    justify-content: center;
-    text-align: center;
     align-items: center;
-    height: 100px;
-    
     background-color: #131d1c;
     color: #fffb48;
+    display: flex;
+    height: 80px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: larger;
+    justify-content: space-between;
+    position: fixed;
+    text-align: center;
+    width: 100%;
 }
 
 .name h1 {
+    margin-left: 20px;
 }
-ul :nth-child(odd){font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+#linksHeader {
+    margin-right: 20px;
+    width: auto;
+}
+
+#linksHeader a {
+    color: #fffb48;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#home {
+    padding-top: 90px;
+}
+
+#home h2 {
+    font-family: 'Potta One', cursive;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.contanierHome {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contanierImage {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    width: 400px;
+}
+
+.contanierImage img {
+    height: 300px;
+    width: 250px;
+}
+
+.contanierTextHome {
+    align-items: center;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    justify-content: center;
+    height: 400px;
+    padding: 15px;
+    width: 400px;
+}
+
+#about {
+    padding-top: 90px;
+}
+
+#about h2 {
+    font-family: 'Potta One', cursive;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.contanierAbout1 {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+#apresentation {
+    align-items: center;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    padding: 15px;
+    width: 400px;
+}
+
+.descrition {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+.image-contanier {
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px gray;
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+}
+
+.image-contanier img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+#listHability {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#listHability h4 {
+    font-family: 'Potta One', cursive;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.hability {
+    align-items: center;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+.hability img {
+    height: 150px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: 150px;
+}
+
+#contanierListTalent {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contanierListTalent h4 {
+    font-family: 'Potta One', cursive;
+    font-size: 30px;
+}
+
+.listOfTalent {
+    align-items: center;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    height: 400px;
+    justify-content: center;
+    width: 400px;
+}
+
+#projects {
+    padding-top: 90px;
+}
+
+#projects h2, h3 {
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+#projects h2 {
+    font-family: 'Potta One', cursive;
+    font-size: 40px;
+}
+
+#projects h3 {
+    font-family: 'Potta One', cursive;
+    font-size: 20px;
+}
+
+.project {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+}
+
+.project h4 {
+    font-family: 'Potta One', cursive;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project button {
+    background-color: #131d1c;
+    border-radius: 5px;
+    color: #fffb48;
+    font-family: 'Potta One', cursive;
+    font-size: 13px;
+}
+
+.imageProject {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px gray;
+    height: 200px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.imageProject img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.contanierProjects {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+#contact {
+    margin-bottom: 30px;
+    padding-top: 90px;
+}
+
+#contact h2, h3 {
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+#contact h2 {
+    font-family: 'Potta One', cursive;
+    font-size: 40px;
+}
+
+#contact h3 {
+    font-family: 'Potta One', cursive;
+    font-size: 20px;
+}
+
+.contanierContacts {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contanierContacts a {
+    height: 100px;
+    width: 100px;
+}
+
+/* ul :nth-child(odd){font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+ */
+footer {
+    background-color: #131d1c;
+    height: 40px;
+}
